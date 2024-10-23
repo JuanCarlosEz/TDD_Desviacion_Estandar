@@ -3,7 +3,7 @@ class NoSePuedeCalcular(Exception):
 class Promedio:
 
     def __init__(self,elementos):
-        self.__elementos = elementos
+        self.elementos = elementos
 
     def media(self):
         try:
