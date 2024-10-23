@@ -3,10 +3,15 @@ class NoSePuedeCalcular(Exception):
 class Promedio:
 
     def __init__(self,elementos):
-        self.elementos = elementos
+        self.__elementos = elementos
 
     def media(self):
         try:
-            pass
+            if len(self.__elementos) == 0:
+                raise NoSePuedeCalcular("No se puede calcular el promedio de una lista vacía")
+            else:
+                if len(self.__elementos) == 1:
+                    return (self.__elementos[0])
+
         except  NoSePuedeCalcular:
             return None

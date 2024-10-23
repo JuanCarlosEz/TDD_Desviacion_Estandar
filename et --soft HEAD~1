@@ -1,0 +1,45 @@
+[33mcommit f53957f81e690b93a2e051061633f1c67f027261[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 1c23b09 143d202
+Author: Juan <75174627@continental.edu.pe>
+Date:   Wed Oct 23 17:36:28 2024 -0500
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       test/PruebaOperaciones.py
+
+[33mcommit 1c23b09048bbff8f8f61f3728cb26b9182ec56d1[m
+Author: Juan <75174627@continental.edu.pe>
+Date:   Wed Oct 23 17:32:17 2024 -0500
+
+    Caso 2:Un solo elemento en la lista(Rojo)
+
+[33mcommit 143d202eb28d8e7464f3d9c35e57690bfb2418ae[m
+Author: Juan <75174627@continental.edu.pe>
+Date:   Wed Oct 23 17:32:17 2024 -0500
+
+    Caso 2:Un solo elemento en la lista
+
+[33mcommit d7302d72c3cf3ab32484f15e3d4f2fe1bbd6bce9[m
+Author: Juan <75174627@continental.edu.pe>
+Date:   Wed Oct 23 00:44:51 2024 -0500
+
+    Caso 1:Caso sin elementos en la lista debe lanzar una excepción(Verde)
+
+[33mcommit c4bdc0b8105b5ae445ba50b0f88276bac1da82ab[m
+Author: Juan <75174627@continental.edu.pe>
+Date:   Wed Oct 23 00:38:27 2024 -0500
+
+    Caso 1:Caso sin elementos en la lista debe lanzar una excepción(Rojo)
+
+[33mcommit 0b5ad1319a37813b56fde0f4face4d82bba1fecd[m
+Author: Juan <75174627@continental.edu.pe>
+Date:   Wed Oct 23 00:34:30 2024 -0500
+
+    Creando el esqueleto de las clases Promedio, DesviacionEstandar y PruebaOperaciones
+
+[33mcommit c717af10de43eef4025f8a11f145406991f63346[m
+Author: Juan <75174627@continental.edu.pe>
+Date:   Wed Oct 23 00:32:16 2024 -0500
+
+    Linea base del proyecto
