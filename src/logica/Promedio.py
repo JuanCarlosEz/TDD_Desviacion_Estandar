@@ -10,6 +10,8 @@ class Promedio:
             if len(self.__elementos) == 0:
                 raise NoSePuedeCalcular("No se puede calcular el promedio de una lista vacía")
             else:
+                if not all(isinstance(x, (int, float)) for x in self.__elementos):
+                    raise TypeError("Todos los elementos deben ser números")
                 if all(x == 0 for x in self.__elementos):
                     return "Cero"
                 if len(self.__elementos) == 1:
@@ -23,3 +25,5 @@ class Promedio:
 
         except  NoSePuedeCalcular:
             return None
+        except TypeError:
+            return "TypeError"
