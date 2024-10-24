@@ -1,5 +1,6 @@
 import unittest
 from src.logica.Promedio import Promedio
+from src.logica.DesviacionEstandar import DesviacionEstandar
 
 class PruebaOperaciones(unittest.TestCase):
 
@@ -25,4 +26,6 @@ class PruebaOperaciones(unittest.TestCase):
    def test_Promedio_N_elementos_elementos_no_numericos(self):
        elementos = Promedio(["a","b","c"])
        self.assertEqual("TypeError",elementos.media())
-
+   def test_Desviacion_Estandar_sin_elementos(self):
+       elementos=DesviacionEstandar([])
+       self.assertIsNone(elementos)
