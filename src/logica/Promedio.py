@@ -17,7 +17,9 @@ class Promedio:
                 if len(self.__elementos) == 2:
                     return sum(self.__elementos)/2
                 if len(self.__elementos) > 2:
-                    return sum(self.__elementos)/len(self.__elementos)
+                    suma_positivos = sum(x for x in self.__elementos if x > 0)
+                    suma_negativos = sum(abs(x) for x in self.__elementos if x < 0)
+                    return (suma_positivos - suma_negativos) /len(self.__elementos)
 
         except  NoSePuedeCalcular:
             return None
