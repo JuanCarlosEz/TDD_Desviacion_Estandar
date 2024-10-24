@@ -28,4 +28,4 @@ class PruebaOperaciones(unittest.TestCase):
        self.assertEqual("TypeError",elementos.media())
    def test_Desviacion_Estandar_sin_elementos(self):
        elementos=DesviacionEstandar([])
-       self.assertIsNone(elementos)
+       self.assertIsNone(elementos.desviacionestandar())
