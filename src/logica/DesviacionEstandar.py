@@ -9,6 +9,8 @@ class DesviacionEstandar:
         try:
             if len(self.__elementos) == 0:
                 raise NoSePuedeCalcular("No se puede calcular la desviacion estandar de una lista vacía")
+            if not all(isinstance(x, (int, float)) for x in self.__elementos):
+                raise TypeError("Todos los elementos deben ser números")
             if len(self.__elementos) == 1:
                 return 0
             if all(x == 0 for x in self.__elementos):
@@ -23,3 +25,5 @@ class DesviacionEstandar:
                 return (suma_cuadrados / len(self.__elementos)) ** 0.5
         except NoSePuedeCalcular:
             return None
+        except TypeError:
+            return "TypeError"
