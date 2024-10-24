@@ -10,11 +10,14 @@ class Promedio:
             if len(self.__elementos) == 0:
                 raise NoSePuedeCalcular("No se puede calcular el promedio de una lista vacía")
             else:
+                if all(x == 0 for x in self.__elementos):
+                    return "Cero"
                 if len(self.__elementos) == 1:
                     return (self.__elementos[0])
                 if len(self.__elementos) == 2:
                     return sum(self.__elementos)/2
                 if len(self.__elementos) > 2:
                     return sum(self.__elementos)/len(self.__elementos)
+
         except  NoSePuedeCalcular:
             return None
