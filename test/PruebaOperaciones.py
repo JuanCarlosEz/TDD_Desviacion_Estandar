@@ -41,3 +41,6 @@ class PruebaOperaciones(unittest.TestCase):
    def test_Desviacion_Estandar_N_elementos_Todos_Ceros(self):
        elementos = DesviacionEstandar([0, 0, 0, 0, 0])
        self.assertEqual("Cero", elementos.desviacionestandar())
+   def test_Desviacion_Estandar_N_elementos_positivos_y_negativos(self):
+       elementos = DesviacionEstandar([1, -3, 8,])
+       self.assertEqual((((1-2)**2+(-3-2)**2+(8-2)**2)/3)**0.5, elementos.desviacionestandar())
