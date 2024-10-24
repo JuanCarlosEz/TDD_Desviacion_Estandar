@@ -15,5 +15,9 @@ class DesviacionEstandar:
                 media=Promedio(self.__elementos).media()
                 x1, x2 = self.__elementos
                 return (((x1 - media) ** 2 + (x2 - media) ** 2)/ 2 ) ** 0.5
+            if len(self.__elementos) > 2:
+                media = Promedio(self.__elementos).media()
+                suma_cuadrados=sum((x - media) ** 2 for x in self.__elementos)
+                return (suma_cuadrados / len(self.__elementos)) ** 0.5
         except NoSePuedeCalcular:
             return None
