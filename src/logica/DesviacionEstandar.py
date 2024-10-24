@@ -11,6 +11,8 @@ class DesviacionEstandar:
                 raise NoSePuedeCalcular("No se puede calcular la desviacion estandar de una lista vacía")
             if len(self.__elementos) == 1:
                 return 0
+            if all(x == 0 for x in self.__elementos):
+                return "Cero"
             if len(self.__elementos) == 2:
                 media=Promedio(self.__elementos).media()
                 x1, x2 = self.__elementos
