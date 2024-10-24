@@ -29,3 +29,6 @@ class PruebaOperaciones(unittest.TestCase):
    def test_Desviacion_Estandar_sin_elementos(self):
        elementos=DesviacionEstandar([])
        self.assertIsNone(elementos.desviacionestandar())
+   def test_Desviacion_Estandar_un_solo_elemento(self):
+       elementos=DesviacionEstandar([8])
+       self.assertEqual(0,elementos.desviacionestandar())
