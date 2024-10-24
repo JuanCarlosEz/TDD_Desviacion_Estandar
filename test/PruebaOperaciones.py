@@ -15,3 +15,7 @@ class PruebaOperaciones(unittest.TestCase):
    def test_Promedio_N_elementos(self):
         elementos=Promedio([4,6,8,10,12])
         self.assertEqual((4+6+8+10+12)/5,elementos.media())
+
+   def test_Promedio_N_elementos_ceros(self):
+       elementos = Promedio([0, 0, 0, 0, 0])
+       self.assertEqual("Cero", elementos.media())
